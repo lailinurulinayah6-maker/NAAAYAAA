@@ -1,0 +1,95 @@
+<!-- Website 1: Bakeri Pinky -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakeri Pinky</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0;
+            background-color: #ffe6f0; background-image: repeating-linear-gradient(45deg, #ffd1e8 0 10px, #ffe6f0 10px 20px);
+        }
+        .navbar {
+            background-color: #ff69b4;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ff85c1;
+        }
+        header {
+            padding: 60px 10px;
+            text-align: center;
+            background-color: #ffb6d9; background-image: repeating-linear-gradient(135deg, #ffc1e3 0 12px, #ffb6d9 12px 24px);
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            color: #555;
+        }
+        .gallery {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #ffeff7; background-image: repeating-linear-gradient(90deg, #ffdcec 0 8px, #ffeff7 8px 16px);
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        #contact {
+            padding: 20px;
+            background-color: #ffccdd; background-image: repeating-linear-gradient(45deg, #ffb3cd 0 6px, #ffccdd 6px 12px);
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 36px; }
+            header p { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+    </div>
+    <header id="home">
+        <h1>Bakeri Pinky</h1>
+        <p>Roti lezat untuk keceriaan Anda!</p>
+    </header>
+    <section id="gallery" class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1606081615341-0d37fa3d642d?auto=format&fit=crop&w=600&q=80" alt="Cupcake Lucu">
+            <p>Cupcake Lucu</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509440159598-028d049a0f5a?auto=format&fit=crop&w=600&q=80" alt="Roti Mawar">
+            <p>Roti Mawar</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1586985289906-406c1f4e68a0?auto=format&fit=crop&w=600&q=80" alt="Donat Manis">
+            <p>Donat Manis</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: info@bakeripinky.com</p>
+        <p>Telepon: +62 812 3456 7890</p>
+    </section>
+</body>
+</html>
